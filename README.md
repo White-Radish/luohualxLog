@@ -3,12 +3,15 @@
 用法：
 1.针对springboot 项目 启动类实现LuohualxInitContainer接口
 2.
+```
 LogDemoTest logDemo1 = new LogDemoTest("小明", 5L, 23, "台州");
 LogDemoTest logDemo2 = new LogDemoTest("小胡", 5L, 24, "杭州");
 LogDemoTest logDemo3 = new LogDemoTest("小强", 4L, 25, "义乌", logDemo1);
 LogDemoTest logDemo4 = new LogDemoTest("小红", 4L, 28, "上海", logDemo2);
 LuohualxObjCompareUtils.compareObj(logDemo3, logDemo4);
+```
 支持对象的嵌套比对
+```json
 {
     "operateTypeEnum": "UPDATE",
     "operateDesc": "更新",
@@ -98,3 +101,4 @@ LuohualxObjCompareUtils.compareObj(logDemo3, logDemo4);
         }
     ]
 }
+```
